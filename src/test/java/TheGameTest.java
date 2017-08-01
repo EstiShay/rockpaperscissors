@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 /**
@@ -5,4 +7,11 @@ import static org.junit.Assert.*;
  */
 public class TheGameTest {
 
+    @Test
+    public void gameOutcome_returnInvalidForOneInput_error() throws Exception {
+        TheGame testGame = new TheGame();
+        String expected = "error - game needs two players";
+        assertEquals(expected, testGame.gameOutcome("rock", ""));
+
+    }
 }
