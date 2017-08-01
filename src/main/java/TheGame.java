@@ -16,6 +16,8 @@ public class TheGame {
             result = "Paper wins!";
         } else if ((play1.equals("rock") && play2.equals("scissors")) || (play1.equals("scissors") && play2.equals("rock")) ){
             result = "Rock wins!";
+        } else if ((play1.equals("paper") && play2.equals("scissors")) || (play1.equals("scissors") && play2.equals("paper")) ){
+            result = "Scissors wins!";
         }
         return result;
     }
