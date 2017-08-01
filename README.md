@@ -22,9 +22,9 @@ This is a simple rock, paper, scissors game to learn a new language (Java) and a
 | Both players play paper | Paper, Paper | Tie |
 | Both players play rock | Rock, Rock | Tie |
 | Both players play scissors | Scissors, Scissors | Tie |
-| Rock v. Paper | Player 1: Rock, Player 2: Paper | Player 2 wins |
-| Rock v. Scissors | Player 1: Rock, Player 2: Scissors | Player 1 wins |
-| Paper v. Scissors | Player 1: Paper, Player 2: Scissors | Player 2 wins |
+| Rock v. Paper | Player 1: Rock, Player 2: Paper | Paper wins |
+| Rock v. Scissors | Player 1: Rock, Player 2: Scissors | Rock wins |
+| Paper v. Scissors | Player 1: Paper, Player 2: Scissors | Scissors wins |
 
 
 ## Technologies Used
