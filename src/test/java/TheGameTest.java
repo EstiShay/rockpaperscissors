@@ -20,7 +20,6 @@ public class TheGameTest {
         TheGame testGame = new TheGame();
         String expected = "It's a tie!";
         assertEquals(expected, testGame.gameOutcome("scissors", "scissors"));
-
     }
 
     @Test
@@ -28,7 +27,6 @@ public class TheGameTest {
         TheGame testGame = new TheGame();
         String expected = "It's a tie!";
         assertEquals(expected, testGame.gameOutcome("paper", "paper"));
-
     }
 
     @Test
@@ -36,7 +34,6 @@ public class TheGameTest {
         TheGame testGame = new TheGame();
         String expected = "It's a tie!";
         assertEquals(expected, testGame.gameOutcome("rock", "rock"));
-
     }
 
     @Test
@@ -44,6 +41,12 @@ public class TheGameTest {
         TheGame testGame = new TheGame();
         String expected = "Paper wins!";
         assertEquals(expected, testGame.gameOutcome("rock", "paper"));
+    }
 
+    @Test
+    public void gameOutcome_returnWinForRockvScissors_RockWin() throws Exception {
+        TheGame testGame = new TheGame();
+        String expected = "Rock wins!";
+        assertEquals(expected, testGame.gameOutcome("rock", "scissors"));
     }
 }
