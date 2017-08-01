@@ -14,4 +14,28 @@ public class TheGameTest {
         assertEquals(expected, testGame.gameOutcome("rock", ""));
 
     }
+
+    @Test
+    public void gameOutcome_returnTieForMatchingScissors_Tie() throws Exception {
+        TheGame testGame = new TheGame();
+        String expected = "It's a tie!";
+        assertEquals(expected, testGame.gameOutcome("scissors", "scissors"));
+
+    }
+
+    @Test
+    public void gameOutcome_returnTieForMatchingPaper_Tie() throws Exception {
+        TheGame testGame = new TheGame();
+        String expected = "It's a tie!";
+        assertEquals(expected, testGame.gameOutcome("paper", "paper"));
+
+    }
+
+    @Test
+    public void gameOutcome_returnTieForMatchingRock_Tie() throws Exception {
+        TheGame testGame = new TheGame();
+        String expected = "It's a tie!";
+        assertEquals(expected, testGame.gameOutcome("rock", "rock"));
+
+    }
 }

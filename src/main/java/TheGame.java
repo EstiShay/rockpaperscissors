@@ -10,6 +10,8 @@ public class TheGame {
         String[] correctPlays = {"rock", "paper", "scissors"};
         if ((!Arrays.asList(correctPlays).contains(play1)) || (!Arrays.asList(correctPlays).contains(play2))) {
             result = "error - game needs two players";
+        } else if (play2.equals(play1)) {
+            result = "It's a tie!";
         }
         return result;
     }
