@@ -38,4 +38,12 @@ public class TheGameTest {
         assertEquals(expected, testGame.gameOutcome("rock", "rock"));
 
     }
+
+    @Test
+    public void gameOutcome_returnWinForRockvPaper_PaperWin() throws Exception {
+        TheGame testGame = new TheGame();
+        String expected = "Paper wins!";
+        assertEquals(expected, testGame.gameOutcome("rock", "paper"));
+
+    }
 }

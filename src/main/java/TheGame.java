@@ -12,6 +12,8 @@ public class TheGame {
             result = "error - game needs two players";
         } else if (play2.equals(play1)) {
             result = "It's a tie!";
+        } else if ((play1.equals("rock") && play2.equals("paper")) || (play1.equals("paper") && play2.equals("rock")) ){
+            result = "Paper wins!";
         }
         return result;
     }
